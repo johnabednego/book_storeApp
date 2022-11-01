@@ -136,7 +136,10 @@ export const Home = ({ navigation }) => {
             source={Oops}
             style={styles.oops}
           />
-          <Text style={{fontSize:25, textAlign:"center"}}>{value} <strong>Not Found!!!</strong></Text>
+         <View style={{flexDirection:"row"}}>
+         <Text style={{fontSize:25, textAlign:"center"}}>{value} </Text>
+          <Text style={{fontSize:25, textAlign:"center", fontWeight:"bold"}}>Not Found!!!</Text>
+         </View>
         </View> : ""}
         {!isLoading && book_length==0 ?
         <View style={{marginBottom:150,alignItems: "center", justifyContent: "center" }}>
@@ -144,7 +147,8 @@ export const Home = ({ navigation }) => {
             source={Oops}
             style={styles.oops}
           />
-          <Text style={{fontSize:25, textAlign:"center"}}>No Book Found!!!<br></br><strong>Check Your Internet Connection</strong></Text>
+          <Text style={{fontSize:25, textAlign:"center"}}>No Book Found!!!</Text>
+          <Text style={{fontSize:25, textAlign:"center", fontWeight:"bold"}}>Check Your Internet Connection</Text>
         </View> : ""}
     </View>)
 

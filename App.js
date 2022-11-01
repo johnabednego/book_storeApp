@@ -28,7 +28,7 @@ export default function App() {
         options={({ route }) => ({ title: route.params.item.title,
           headerStyle:{"backgroundColor":"white"},
             headerTitleAlign:"center",
-            headerTitleStyle:{"color":"black", fontSize:25, "marginLeft":"15px"},
+            headerTitleStyle:{"color":"black", fontSize:25, marginLeft:15},
         })}
      
         />
