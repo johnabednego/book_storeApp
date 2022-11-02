@@ -130,17 +130,6 @@ export const Home = ({ navigation }) => {
           )}
         >
         </FlatList>)}
-      {!search && value.length > 0 ?
-        <View style={{marginBottom:150,alignItems: "center", justifyContent: "center" }}>
-          <Image
-            source={Oops}
-            style={styles.oops}
-          />
-         <View style={{flexDirection:"row"}}>
-         <Text style={{fontSize:25, textAlign:"center"}}>{value} </Text>
-          <Text style={{fontSize:25, textAlign:"center", fontWeight:"bold"}}>Not Found!!!</Text>
-         </View>
-        </View> : ""}
         {!isLoading && book_length==0 ?
         <View style={{marginBottom:150,alignItems: "center", justifyContent: "center" }}>
           <Image

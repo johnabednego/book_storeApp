@@ -35,23 +35,23 @@ export const Book = ({ route }) => {
               resizeMode="stretch"
             />
             <Text style={{ fontSize: 25, fontWeight: "bold", marginVertical: 10, textAlign: "center", borderBottomWidth: 2, marginHorizontal: 15, }}>{item.title}</Text>
-            <View style={{ marginBottom:10,flexDirection: "row" }}>
+            <View style={{ flexWrap:"wrap", marginHorizontal: 5, justifyContent:"center", marginBottom:10,flexDirection: "row" }}>
               <Text style={{  fontWeight: "bold", fontSize: 22, textAlign: "center" }} >Author: </Text>
               <Text style={{ fontSize: 23, textAlign: "center" }}> {item.author}</Text>
             </View>
-            <View style={{ marginBottom:10,flexDirection: "row" }}>
+            <View style={{ flexWrap:"wrap", marginHorizontal: 5, justifyContent:"center", marginBottom:10,flexDirection: "row" }}>
               <Text style={{  fontWeight: "bold", fontSize: 22, textAlign: "center" }} >Published On: </Text>
               <Text style={{ fontSize: 23, textAlign: "center" }}> {published}</Text>
             </View>
-            <View style={{ marginBottom:10,flexDirection: "row" }}>
+            <View style={{ flexWrap:"wrap", marginHorizontal: 5, justifyContent:"center", marginBottom:10,flexDirection: "row" }}>
               <Text style={{  fontWeight: "bold", fontSize: 22, textAlign: "center" }} >Publisher: </Text>
               <Text style={{ fontSize: 23, textAlign: "center" }}> {item.publisher}</Text>
             </View>
-            <View style={{ marginBottom:10,flexDirection: "row" }}>
+            <View style={{ flexWrap:"wrap", marginHorizontal: 5, justifyContent:"center", marginBottom:10,flexDirection: "row" }}>
               <Text style={{  fontWeight: "bold", fontSize: 22, textAlign: "center" }} >Number of Pages: </Text>
               <Text style={{ fontSize: 23, textAlign: "center" }}> {item.pages}</Text>
             </View>
-            <View style={{ flexDirection: "row" }}>
+            <View style={{ flexWrap:"wrap", marginHorizontal: 5, justifyContent:"center", flexDirection: "row" }}>
               <Text style={{ fontSize: 23, textAlign: "center" }} >Book</Text>
               <Text style={{ fontSize: 22, textAlign: "center",fontWeight: "bold", }}> {item.id} </Text>
               <Text style={{ fontSize: 23, textAlign: "center" }} > of {book_length}</Text>
